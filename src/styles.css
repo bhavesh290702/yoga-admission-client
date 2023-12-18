@@ -1,0 +1,165 @@
+#root{
+    font-family: fangsong;;
+}
+
+/* for navbar css */
+#navbar{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    overflow: hidden;
+    background: #3b0606;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+#navbar #logo{
+    font-size: 40px;
+    color: white;
+    margin-left: 50px;
+    font-family: math;
+}
+
+
+/* css for login page  */
+#loginPage{
+    background-image: url("../public/loginBg.jpg");
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    background-color: #000000b0;
+    background-blend-mode: overlay;
+    flex-direction: column;
+}
+#loginPage .form{
+    width: 400px;
+}
+#loginPage input{
+    width: 364px;
+    height: 60px;
+    padding-block: 0px;
+    padding-inline: 14px;
+    background: transparent;
+    border: 4px solid white;
+    font-weight: 700;
+    color: white;
+}
+#loginBtn{
+    height: 50px;
+    width: 400px;
+    color: white;
+    background-color: #720d0d;
+    font-weight: 800;
+    margin-top: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+/* css for home page */
+#homePage{
+    background-image: url("../public/homeBg.jpg");
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    background-color: #000000b0;
+    background-blend-mode: overlay;
+    flex-direction: column;
+}
+#homePage .text{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+.btn{
+    background-color: #720d0d;
+    color: white;
+    border: none;
+    font-weight: 600;
+    padding: 12px 38px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+
+
+/* enroll pages css  */
+#enrollPage{
+    width: 500px;
+    margin: 100px auto;
+}
+.userInfo,.cardInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.userInfo input,.cardInfo input{
+    padding: 0px 20px;
+    height: 60px;
+    width: 400px;
+    margin: 10px 0px;
+}
+.userInfo select{
+    padding: 0px 20px;
+    height: 60px;
+    width: 441px;
+    margin: 10px 0px;
+}
+
+
+
+
+
+.d-flex{
+    display: flex;
+}
+.flex-row{
+    flex-direction: row;
+}
+.w-100{
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 500px) {
+    
+    #loginPage .form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #loginPage input{
+        width: 90%;
+    }
+    #loginBtn{
+        width: 90%;
+    }
+    
+   
+    
+    /* enroll pages css  */
+    #enrollPage{
+        width: 100%;
+        margin: 100px auto;
+    }
+    .userInfo input,.cardInfo input{
+        width: 79%;
+    }
+    .userInfo select{
+        width: 90%;
+    }
+    
+  }
